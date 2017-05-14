@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
+=======
+>>>>>>> newbrench
 
 @Component({
   selector: 'home-app',
@@ -7,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 
+<<<<<<< HEAD
 export class HomeComponent {
   count: number = 0;
   reloadCount: number = 5;
@@ -50,3 +54,6 @@ export class HomeComponent {
   }
 
 }
+=======
+export class HomeComponent { }
+>>>>>>> newbrench

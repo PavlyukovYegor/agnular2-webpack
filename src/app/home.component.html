@@ -1,8 +1,15 @@
 <div class="row">
+<<<<<<< HEAD
   <div class="col-md-1 slider_control flexing" (click)="counterDec()">
     <img src="../assets/left-arrow.png" class="floating_image" alt="">
   </div>
   <div class="slider col-md-10 flexing">
+=======
+  <div class="col-md-1 slider_control" (click)="counterDec()">
+    <img src="../assets/left-arrow.png" class="floating_image" alt="">
+  </div>
+  <div class="slider col-md-10 ">
+>>>>>>> newbrench
     <div [ngSwitch]="count">
       <template [ngSwitchCase]="0">
       <img class="floating_image" src="../assets/Angular2.png" alt="">
@@ -15,12 +22,20 @@
     </template>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="col-md-1 slider_control flexing" (click)="counterInc()">
+=======
+  <div class="col-md-1 slider_control" (click)="counterInc()">
+>>>>>>> newbrench
     <img src="../assets/right-arrow.png" class="floating_image" alt="">
   </div>
 </div>
 <div class="row">
+<<<<<<< HEAD
   <h1>Reload after....    {{reloadCount}}</h1>
+=======
+  <h1>Reload after....   {{reloadCount}}</h1>
+>>>>>>> newbrench
 </div>
 <!-- Картинки можно было сделать через *ngFor="#item of items, #i = index",
 но я не работал еще c ngSwitch, по этому решил сделать так -->
