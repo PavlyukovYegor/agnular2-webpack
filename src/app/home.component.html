@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-1 slider_control flexing" (click)="counterDec()">
+    <img src="../assets/left-arrow.png" class="floating_image" alt="">
+  </div>
+  <div class="slider col-md-10 flexing">
+    <div [ngSwitch]="count">
+      <template [ngSwitchCase]="0">
+      <img class="floating_image" src="../assets/Angular2.png" alt="">
+    </template>
+      <template [ngSwitchCase]="1">
+      <img class="floating_image" src="../assets/github.png" alt="">
+    </template>
+      <template [ngSwitchCase]="2">
+      <img class="floating_image" src="../assets/webpack.png" alt="">
+    </template>
+    </div>
+  </div>
+  <div class="col-md-1 slider_control flexing" (click)="counterInc()">
+    <img src="../assets/right-arrow.png" class="floating_image" alt="">
+  </div>
+</div>
+<div class="row">
+  <h1>Reload after....    {{reloadCount}}</h1>
+</div>
+<!-- Картинки можно было сделать через *ngFor="#item of items, #i = index",
+но я не работал еще c ngSwitch, по этому решил сделать так -->
